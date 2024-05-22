@@ -10,7 +10,8 @@ import {
   IconButton, 
   List, 
   ListItem, 
-  Text 
+  Text,
+  Box 
 } from "@chakra-ui/react";
 import { FaTrash } from "react-icons/fa";
 
@@ -77,8 +78,15 @@ const Index = () => {
           ))}
         </List>
       </VStack>
+      <Footer />
     </Container>
   );
 };
+
+const Footer = () => (
+  <Box as="footer" py={4} textAlign="center" w="100%" bg="gray.200" mt={10}>
+    <Text>© 2023 Todo App</Text>
+  </Box>
+);
 
 export default Index;
