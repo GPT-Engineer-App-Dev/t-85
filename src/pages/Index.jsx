@@ -47,7 +47,7 @@ const Index = () => {
             value={newTask} 
             onChange={(e) => setNewTask(e.target.value)} 
           />
-          <Button onClick={addTask} colorScheme="teal">Add Task</Button>
+          <Button onClick={addTask} colorScheme="red">Add Task</Button>
         </HStack>
         <List spacing={3} w="100%">
           {tasks.map((task, index) => (
